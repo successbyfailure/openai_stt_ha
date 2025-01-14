@@ -175,7 +175,7 @@ class OpenAISTTProvider(Provider):
             audio_data += chunk
 
         # OpenAI client with API Key
-        client = OpenAI(api_key=self._api_key,base_url=self.api_base)
+        client = OpenAI(api_key=self._api_key,base_url=self._api_base)
 
         # convert audio data to the correct format
         wav_stream = io.BytesIO()
